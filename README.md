@@ -1,3 +1,5 @@
+ **Due to a normalization bug the expert trajectories have lower performance than the [rl_baseline_zoo](<https://github.com/araffin/rl-baselines-zoo/blob/master/benchmark.md>) reported experts. Please see the following link in codebase for where the bug was fixed at.** [[link](<https://github.com/xkianteb/dril/blob/e244dcdfca042a3951e98a53864ead33ff6801fc/dril/generate_demonstration_data.py#L96>)]
+
 # Disagreement-Regularized Imitation Learning
 
 Code to train the models described in the paper ["Disagreement-Regularized Imitation Learning"](<https://openreview.net/pdf?id=rkgbYyHtwB>), by Kianté Brantley, Wen Sun and Mikael Henaff.
