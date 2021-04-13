@@ -21,7 +21,7 @@ pip install -e .
 We provide a python script to generate expert data from per-trained models using the ["rl-baselines-zoo"](<https://github.com/araffin/rl-baselines-zoo>) repository. Click ["Here"](<https://github.com/araffin/rl-baselines-zoo/blob/master/benchmark.md>) to see all of the pre-trained agents available and their respective perfromance. Replace ``<name-of-environment>`` with the name of the pre-trained agent environment you would like to collect expert data for. 
 
 ```
-python -u generate_demonstration_data.py --seed <seed-number> --env-name <name-of-environment>
+python -u generate_demonstration_data.py --seed <seed-number> --env-name <name-of-environment> --rl_baseline_zoo_dir <location-to-top-level-directory>
 ```
 
 ### Training
