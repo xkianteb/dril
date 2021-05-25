@@ -120,9 +120,9 @@ while True:
             action = torch.FloatTensor([expert.predict(None)])
         elif hasattr(gym.envs, 'atari'):
             _, actor_features, _ = th_model.base(obs, None, None)
-            action = th.argmax(th_model.dist.linear(actor_features)).reshape(-1,1)
-            # dist = th_model.dist(actor_features)
-            # action = dist.sample()
+            #action = th.argmax(th_model.dist.linear(actor_features)).reshape(-1,1)
+            dist = th_model.dist(actor_features)
+            action = dist.sample()
         else:
             _, action, _, _ = th_model.act(obs, None, None, deterministic=True)
 
